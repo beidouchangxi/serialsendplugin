@@ -108,7 +108,7 @@ void SerialSendPlugin::updateCounters(int ,int )
 
 bool SerialSendPlugin::stateChanged(int index, QDltConnection::QDltConnectionState connectionState,QString hostname){
 
-    qDebug() << ecuList->at(index) << "ConnectionState:" << connectionState << "Hostname:" << hostname << endl;
+    qDebug() << ecuList->at(index) << "ConnectionState:" << connectionState << "Hostname:" << hostname << Qt::endl;
 
     return true;
 }
